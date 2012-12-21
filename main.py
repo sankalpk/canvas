@@ -11,14 +11,6 @@ from google.appengine.api import mail
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape=True)
 
-#Functions
-users=['divya','columbia','upenn','jhu','jefferson','bostoncollege','mgh','northeastern']
-def valid_username(username):
-  return username.lower() in users
-
-def valid_password(password):
-  return password=="oohlala"
-
 #HANDLERS
 class GenericHandler(webapp2.RequestHandler):
     def write(self, *a, **kw):
@@ -32,31 +24,6 @@ class GenericHandler(webapp2.RequestHandler):
 class Home(GenericHandler):
   def get(self):
       self.render('home.html')
-
-class About(GenericHandler):
-  def get(self):
-      self.render('about.html')
-
-class Events(GenericHandler):
-  def get(self):
-    self.render('events.html')
-
-class Resources(GenericHandler):
-  def get(self):
-    self.render('resources.html')
-class LogoutHandler(GenericHandler):
-  def get(self):
-    self.response.headers.add_header('Set-Cookie', 'user_id=; Path=/')
-    self.redirect('/manuscript')
-
-class AdminView(GenericHandler):
-  def get(self):
-    userCookie = self.request.cookies.get('user_id')
-    if(userCookie[-4:]=="0123" and userCookie[:-4]=="divya"):
-      logins= db.GqlQuery("SELECT * FROM UserLogin ORDER BY created DESC")
-      self.render("admin.html",logins=logins)
-    else:
-      self.redirect('/manuscript')
 
 class Signup(GenericHandler):
     def post(self):
@@ -74,13 +41,6 @@ class Signup(GenericHandler):
 
         mail.send_mail(sender_address, "sankalp@cmuspeech.com", subject, body)
         self.render("signup.html",email=user_address)
-class DebateTeam(GenericHandler):
-  def get(self):
-    self.render('debateteam.html')
 
-app = webapp2.WSGIApplication([('/', Home),('/about',About),('/events',Events),('/logout',LogoutHandler),('/resources',Resources), ('/signup',Signup),('/debateteam',DebateTeam)],
+app = webapp2.WSGIApplication([('/', Home),('/signup',Signup)],
                               debug=True)
-
-class UserLogin(db.Model):
-  username = db.StringProperty(required=True)
-  created = db.DateTimeProperty(auto_now_add = True)
