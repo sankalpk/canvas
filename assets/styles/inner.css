@@ -1,0 +1,248 @@
+/* 
+
+Revolution - CSS File
+
+USE THIS STYLE SHEET FOR INNER PAGE
+
+*/
+
+
+
+/* Page Navi*/
+.pagenavi {padding:0; font-size:12px; margin:0 0 0 0; float:right; }
+
+.pagenavi a, .pagenavi a:visited{
+	padding:0 5px;
+	height:10px;
+	margin-right:5px;
+	background:url(../images/pagenav.png) no-repeat;
+	text-indent:-9999em;
+	float:left;
+}
+
+.pagenavi a:hover{
+	margin-right:5px;
+	background:url(../images/pagenav-hover.png) no-repeat;
+	text-decoration:none;
+}
+
+.pagenavi .current{
+	padding:0 5px;
+	height:10px;
+	margin-right:5px;
+	background:url(../images/pagenav-hover.png) no-repeat;
+	text-decoration:none;
+	cursor:pointer;
+	float:left;
+	text-indent:-9999em;
+}
+
+
+
+/* BLOG */
+.post{margin-bottom:40px; padding-bottom:40px; clear:both; border-bottom:1px solid #ebebeb; position:relative }
+.post.last{background:transparent; margin-bottom:20px; padding-bottom:40px;}
+.posttitle, .posttitle a{font-size:20px; line-height:20px; margin:10px 0px; color:#444 !important; font-family: 'OpenSansBold';}
+.posttitle a:hover{text-decoration:none;}
+
+.entry-content {margin:0; margin-left:136px}
+.entry-utility{overflow:hidden; position:absolute; border:1px solid #eaeaea; background:#f8f8f8; text-align:center; color:#919191;}
+.entry-utility .posttime{ padding:8px 22px; line-height:25px; }
+.entry-utility .posttime span, .entry-utility .postcom span{ display:block; font-family: 'OpenSansBold'; font-size:18px; color:#444;}
+.entry-utility .postcom{ border-top:1px solid #eaeaea; padding:11px 22px;}
+
+#singlepost.post{margin-bottom:30px; padding-bottom:30px;}
+
+.commentlist{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.commentlist ol{
+	list-style-type:none;
+	padding:30px 0 0 90px;
+	margin:0;
+}
+
+.commentlist li{
+	position:relative;
+	padding:0 0 30px 0;
+}
+.commentlist li li{
+	position:relative;
+	padding:0;
+}
+
+.avatar{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.fn{font-size:12px; font-style:normal;}
+.tdate{padding-left:30px;}
+.tdate, .reply{ font-size:10px; color:#bababa; }
+
+.comment-body{margin:0 0 0 90px; padding:20px; background:#f8f8f8;}
+.comment-body p{ margin-bottom:5px; margin-top:10px;}
+.comment-body .more{ padding:0px 0px;}
+#commentform{margin-bottom:15px;}
+#commentform label{display:block}
+#commentform .text-input{
+	margin-bottom:8px;
+	padding:8px 5px;
+	vertical-align:middle;
+}
+#commentform .textarea{
+	margin-bottom:20px;
+	padding:8px 5px;
+	vertical-align:top;
+	width:90%
+}
+
+
+/* PORTFOLIO */
+#ts-display-portfolio{ border-bottom:1px solid #ebebeb; float:left; margin-bottom:20px;}
+.ts-display-pf-img{position:relative;}
+.ts-display-pf-img img{display:block;}
+.ts-display-clear{clear:both; height:1px !important; line-height:1px !important; float:none!important}
+
+.ts-display-pf-text{ text-align:center;}
+
+.ts-display-pf-img a .rollover{
+	background:url(../images/hover-zoom.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#000;
+	display:block;
+    position:absolute!important;
+	z-index:10;
+	display:none;
+	cursor:pointer;
+}
+.ts-display-pf-img a .rollover.gotolink{
+	background:url(../images/hover-link.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.ts-display-pf-img a .rollover.gotopost{
+	background:url(../images/hover-doc.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+/*======= Portfolio 2 Column =======*/
+#ts-display-pf-col-2{list-style-type:none; padding:0; margin:0;}
+#ts-display-pf-col-2 li{list-style-type:none; padding:0; margin:0 20px 40px 0; width:460px; float:left; }
+#ts-display-pf-col-2 li.nomargin{margin-right:0;}
+#ts-display-pf-col-2 h2{margin-bottom:15px; font-size:14px; line-height:20px; font-family: 'OpenSansSemibold';}
+
+#ts-display-pf-col-2 .ts-display-pf-img{
+	width:460px;
+	height:100%;
+}
+
+#ts-display-pf-col-2 .ts-display-pf-img a.image{
+	width:460px;
+	height:100%;
+	display:block;
+	position:relative;
+}
+
+#ts-display-pf-col-2  .ts-display-pf-img a .rollover{
+	width:460px;
+	height:100%;
+	cursor:pointer;
+}
+
+#ts-display-pf-col-2 .ts-display-pf-text{
+	margin-top:20px; 
+}
+
+
+
+/*======= Portfolio 3 Column =======*/
+#ts-display-pf-col-3{list-style-type:none; padding:0; margin:0;}
+#ts-display-pf-col-3 li{list-style-type:none; padding:0; margin:0 20px 40px 0; width:300px;  float:left;}
+#ts-display-pf-col-3 li.nomargin{margin-right:0;}
+#ts-display-pf-col-3 h2{margin-bottom:15px; font-size:14px; line-height:20px; font-family: 'OpenSansSemibold';}
+
+#ts-display-pf-col-3 .ts-display-pf-img{
+	width:300px;
+	height:100%;
+}
+
+#ts-display-pf-col-3 .ts-display-pf-img a.image{
+	width:300px;
+	height:100%;
+	display:block;
+	position:relative;
+}
+
+#ts-display-pf-col-3  .ts-display-pf-img a .rollover{
+	width:300px;
+	height:100%;
+	cursor:pointer;
+}
+
+#ts-display-pf-col-3 .ts-display-pf-text{
+	margin-top:20px;
+}
+
+/*======= Portfolio 4 Column =======*/
+#ts-display-pf-col-4{list-style-type:none; padding:0; margin:0;}
+#ts-display-pf-col-4 li{list-style-type:none; padding:0; margin:0 20px 40px 0; width:220px;  float:left;}
+#ts-display-pf-col-4 li.nomargin{margin-right:0;}
+#ts-display-pf-col-4 h2{margin-bottom:15px; font-size:14px; line-height:20px; font-family: 'OpenSansSemibold';}
+
+#ts-display-pf-col-4 .ts-display-pf-img{
+	width:220px;
+	height:100%;
+}
+
+#ts-display-pf-col-4 .ts-display-pf-img a.image{
+	width:220px;
+	height:100%;
+	display:block;
+	position:relative;
+
+}
+
+#ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+	width:220px;
+	height:100%;
+	cursor:pointer;
+}
+
+#ts-display-pf-col-4 .ts-display-pf-text{
+	margin-top:20px;
+}
+
+
+
+/* CONTACT */
+form{margin:0; padding:0;}
+fieldset{border:0px;}
+#contactform{margin:0 auto; position:relative; }
+#contactform label{display:block; width:100%; float:left; color:#444; font-family: 'OpenSansSemibold'; padding-bottom:5px;}
+span.required{ color:#888;}
+span.error{color:red;text-align:left; font-size:11px;}
+#contactform input.text-input{
+	margin-bottom:10px;
+	vertical-align:middle;
+	width:70%;
+	float:left;
+}
+#contactform textarea{ width:95%; float:left;} 
+#message{ margin-left:0px;}
+#message h2	{}
+#message p{margin:6px 0px; }
+.note{ color:#d45454;}
+#contactform .button{
+	cursor:pointer;
+	margin-top:15px;
+	padding:5px 15px;
+	line-height:20px;
+	clear:both;
+	float:left;
+	font-size:11px;
+ }

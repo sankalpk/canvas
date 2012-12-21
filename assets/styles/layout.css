@@ -1,0 +1,194 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#bodychild{width:100%;}
+	
+	/* Portfolio 2 Column */
+	#ts-display-pf-col-2 li{width:364px;}
+	#ts-display-pf-col-2 .ts-display-pf-img{
+		width:364px;
+	}
+	
+	#ts-display-pf-col-2 .ts-display-pf-img a.image{
+		width:364px;
+	}
+	
+	#ts-display-pf-col-2  .ts-display-pf-img a .rollover{
+		width:364px;
+	}
+	
+	/* Portfolio 3 Column */
+	#ts-display-pf-col-3 li{width:236px;}
+	#ts-display-pf-col-3 .ts-display-pf-img{
+		width:236px;
+	}
+	
+	#ts-display-pf-col-3 .ts-display-pf-img a.image{
+		width:236px;
+	}
+	
+	#ts-display-pf-col-3  .ts-display-pf-img a .rollover{
+		width:236px;
+	}
+	
+	/* Portfolio 4 Column */
+	#ts-display-pf-col-4 li{width:172px;}
+	#ts-display-pf-col-4 .ts-display-pf-img{
+		width:172px;
+	}
+	
+	#ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:172px;
+	}
+	
+	#ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:172px;
+	}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	#bodychild{width:100%;}
+	
+	/* Header */
+	#logo{text-align:center;}
+	#headertext{display:none;}
+	#navigation{text-align:center; clear:both}
+	nav{margin:0; float:none;}
+	.js .tinynav { display: block; display: inline-block; text-align:left ; margin:10px 0 20px 0}/* mobile dropdown */
+    .js #topnav { display: none }
+	
+	/* Main Content */
+	img.alignright, .alignright{float:none; margin:0 0 0 0 !important;}
+	#sidebar .widget-container{padding:0;}
+	
+	
+	/* Portfolio 2 Column */
+	#ts-display-pf-col-2 li{width:300px;}
+	#ts-display-pf-col-2 .ts-display-pf-img{
+		width:300px;
+	}
+	
+	#ts-display-pf-col-2 .ts-display-pf-img a.image{
+		width:300px;
+	}
+	
+	#ts-display-pf-col-2  .ts-display-pf-img a .rollover{
+		width:300px;
+	}
+	
+	
+	/* Portfolio 3 Column */
+	#ts-display-pf-col-3 li{width:300px;}
+	#ts-display-pf-col-3 .ts-display-pf-img{
+		width:300px;
+	}
+	
+	#ts-display-pf-col-3 .ts-display-pf-img a.image{
+		width:300px;
+	}
+	
+	#ts-display-pf-col-3  .ts-display-pf-img a .rollover{
+		width:300px;
+	}
+	
+	
+	/* Portfolio 4 Column */
+	#ts-display-pf-col-4 li{width:300px;}
+	#ts-display-pf-col-4 .ts-display-pf-img{
+		width:300px;
+	}
+	
+	#ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:300px;
+	}
+	
+	#ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:300px;
+	}
+	
+	
+	#tscarousel-container{display:none;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#bodychild{width:100%;}
+	
+	/* Portfolio 2 Column */
+	#ts-display-pf-col-2 li{width:420px;}
+	#ts-display-pf-col-2 .ts-display-pf-img{
+		width:420px;
+	}
+	
+	#ts-display-pf-col-2 .ts-display-pf-img a.image{
+		width:420px;
+	}
+	
+	#ts-display-pf-col-2  .ts-display-pf-img a .rollover{
+		width:420px;
+	}
+	
+	/* Portfolio 3 Column */
+	#ts-display-pf-col-3 li{width:420px;}
+	#ts-display-pf-col-3 .ts-display-pf-img{
+		width:420px;
+	}
+	
+	#ts-display-pf-col-3 .ts-display-pf-img a.image{
+		width:420px;
+	}
+	
+	#ts-display-pf-col-3  .ts-display-pf-img a .rollover{
+		width:420px;
+	}
+	
+	/* Portfolio 4 Column */
+	#ts-display-pf-col-4 li{width:420px;}
+	#ts-display-pf-col-4 .ts-display-pf-img{
+		width:420px;
+	}
+	
+	#ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:420px;
+	}
+	
+	#ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:420px;
+	}
+	
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#bodychild{width:100%;}
+	
+	/* Slider */
+	.flex-caption{display:none;}
+	
+	
+	/* Blog */
+	.entry-content {margin:0; margin-left:110px}
+	.entry-utility .posttime{padding:8px 10px;}
+	.entry-utility .postcom{padding:11px 10px;}
+	.commentlist ol{padding-left:20px;}
+	.avatar{display:none;}
+	.comment-body{margin:0;}
+
+}

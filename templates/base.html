@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>CMU Speech and Debate</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/inner.css" />
+    <link rel="stylesheet" href="styles/flexslider.css" />
+    <link rel="stylesheet" href="styles/jcarousel.css" />
+    <link rel="stylesheet" href="styles/prettyPhoto.css" media="screen"/>
+    <link rel="stylesheet" href="styles/color.css" />
+	<link rel="stylesheet" href="styles/layout.css" />
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+
+    {% block headercontent %}
+    {% endblock %}
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-29773242-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
+</head>
+
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    
+        <!-- HEADER -->
+        <div id="outerheader">
+        	<div class="container">
+            <header id="top" class="twelve columns">
+            	<div id="logo"  class="three columns alpha"><a href="/"><img src="images/finalheader.png" alt=""></a></div>
+                <div id="headertext" class="nine columns omega">Join the <strong><a href="/debateteam">Speech and Debate team</strong></a> today!</div>
+                <section id="navigation" class="nine columns omega">
+                    <nav>
+                        <ul id="topnav" class="sf-menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/events">Events</a></li>
+                            <li><a href="/resources">Resources</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    <div class="clear"></div>
+                </section>
+                <div class="clear"></div>
+            </header>
+            </div>
+        </div>
+        <!-- END HEADER -->
+        {% block content %}
+        {% endblock %}
+        
+        <!-- FOOTER SIDEBAR -->
+        <div id="outerfootersidebar">
+        	<div class="container">
+                <div id="footersidebarcontainer" class="twelve columns"> 
+                    <footer id="footersidebar">
+                    
+                    <div id="footcol1"  class="three columns alpha">
+                    <ul>
+                        <li class="widget-container">
+                            <h2 class="widget-title">Follow Us</h2>
+                            <p>Keep up with the the organization through our Facebook and Twitter pages.</p>
+                            <ul class="sn">
+                                <li><a title="Facebook" href="http://facebook.com/cmuspeech"><span style="background:url(images/social/facebook.png)" class="icon-img"></span></a></li>
+                               <li><a title="Twitter" href="http://twitter.com/cmuspeech"><span style="background:url(images/social/twitter.png)" class="icon-img"></span></a></li>
+
+                                <!--<li><a title="Youtube" href="http://youtube.com"><span style="background:url(images/social/youtube.png)" class="icon-img"></span></a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                    <div id="footcol2"  class="three columns">
+                        <ul>
+                          <li class="widget-container">
+                            <h2 class="widget-title">Keep in touch</h2>
+                                <p>Contact us for anything you need. We’re always willing to help.</p>
+                                Email: <a href="mailto:contact@cmuspeech.com">contact@cmuspeech.com</a>                        
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="footcol3"  class="three columns">
+                        <ul>
+                            <li class="widget-container">
+                                <h2 class="widget-title">Updates</h2>
+                                <p>Sign up to receive updates about events and competitions.</p>	
+                                <form action="/signup" method="post" id="newsletter">
+                                <div><input type="text" name="email_address" value="your@email.com" /><input type="submit" value="Submit" /></div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="footcol4"  class="three columns omega">
+                    <ul>
+                        <li class="widget-container">
+                            <h2 class="widget-title">About Us</h2>
+                            <p>CMU Speech and Debate is an organization by students and for students focused on helping you perfect your public speaking skills.</p>
+                        </li>
+                    </ul>
+                    </div>
+                    
+                    <div class="clear"></div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER SIDEBAR -->
+        
+        <!-- FOOTER -->
+        <div id="outerfooter">
+        	<div class="container">
+                <div id="footercontainer" class="twelve columns">
+                    <footer id="footer">Copyright &copy; 2012 CMU Speech and Debate. All Rights Reserved</footer>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+	</div><!-- end bodychild -->
+</div><!-- end outercontainer -->
+{% block js %}
+<!-- Javascript
+================================================== -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<!-- jQuery Superfish -->
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<!-- jQuery Flexslider -->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<!-- jQuery jCarousel -->
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/jcarousel-config.js"></script>
+<!-- jQuery Dropdown Mobile -->
+<script type="text/javascript" src="js/tinynav.min.js"></script>
+<!-- jQuery PrettyPhoto -->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- Hook Flexslider -->
+<script type="text/javascript">
+jQuery(window).load(function() {
+    jQuery('.flexslider').flexslider({
+          animation: "fade",
+		  controlNav: false  
+        });
+});
+</script>
+{% endblock %}
+
+</body>
+</html>

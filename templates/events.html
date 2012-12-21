@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block headercontent %}
+<link rel='stylesheet' type='text/css' href='fullcalendar/fullcalendar.css' />
+<link rel='stylesheet' type='text/css' href='fullcalendar/fullcalendar.print.css' media='print' />
+
+<style type='text/css'>
+	#loading {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		}
+
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+
+</style>
+{% endblock %}
+{% block content%}
+<div id='loading' style='display:none'>loading...</div>
+<div id='calendar'></div>
+{% endblock%}
+
+{% block js %}
+<script type='text/javascript' src='jquery/jquery-1.7.1.min.js'></script>
+<script type='text/javascript' src='jquery/jquery-ui-1.8.17.custom.min.js'></script>
+<script type='text/javascript' src='fullcalendar/fullcalendar.min.js'></script>
+<script type='text/javascript' src='fullcalendar/gcal.js'></script>
+<script type='text/javascript'>
+
+	$(document).ready(function() {
+	
+		$('#calendar').fullCalendar({
+			//CMU Speech URL
+			events: 'https://www.google.com/calendar/feeds/r6mkp3b4a55fn1h2uomf73ikhk%40group.calendar.google.com/public/basic',
+			
+			eventClick: function(event) {
+				// opens events in a popup window
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				if (bool) {
+					$('#loading').show();
+				}else{
+					$('#loading').hide();
+				}
+			}
+			
+		});
+		
+	});
+
+</script>
+{% endblock %}

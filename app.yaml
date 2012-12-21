@@ -1,0 +1,25 @@
+application: cmusand
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /styles
+  static_dir: assets/styles
+- url: /images
+  static_dir: assets/images
+- url: /js
+  static_dir: assets/js
+- url: /fonts
+  static_dir: assets/fonts
+- url: /jquery
+  static_dir: assets/jquery
+- url: /fullcalendar
+  static_dir: assets/fullcalendar
+- url: /.*
+  script: main.app
+
+libraries:
+- name: jinja2
+  version: latest
