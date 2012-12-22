@@ -34,9 +34,11 @@ class Signup(GenericHandler):
             # You entered an invalid email address.
         #else:
         sender_address = "sankalp221@gmail.com"
-        subject = "New Dlist signup"
+        subject = "Canvas Response Requested %s" % user_address
         body = """
-        Someone has just signed up to the dlist. Please add:%s
+        This person wants your attention:
+
+        %s
         """ % user_address
 
         mail.send_mail(sender_address, "sankalp@cmuspeech.com", subject, body)
